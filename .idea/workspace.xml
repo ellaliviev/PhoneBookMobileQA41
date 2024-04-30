@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="367895e7-ce5e-4add-a31a-47c0bb5d5cbc" name="Changes" comment="new" />
+    <list default="true" id="367895e7-ce5e-4add-a31a-47c0bb5d5cbc" name="Changes" comment="new">
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppiumConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/screens/ContactListScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/AddNewContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/RemoveContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/RemoveContactTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +44,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -59,7 +67,31 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.LoginDataProviderTest.loginTestNegative">
+  <component name="RunManager" selected="Gradle.LoginTest.loginPositive">
+    <configuration name="AddNewContactTest.addNewContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.AddNewContactTest.addNewContact&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="LoginDataProviderTest.loginTestNegative" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -108,6 +140,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="RemoveContactTest.removeContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.RemoveContactTest.removeContact&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="SplashScreenTest.splashScreenCheckVersion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -134,8 +190,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LoginDataProviderTest.loginTestNegative" />
         <item itemvalue="Gradle.LoginTest.loginPositive" />
+        <item itemvalue="Gradle.LoginDataProviderTest.loginTestNegative" />
+        <item itemvalue="Gradle.AddNewContactTest.addNewContact" />
+        <item itemvalue="Gradle.RemoveContactTest.removeContact" />
         <item itemvalue="Gradle.SplashScreenTest.splashScreenCheckVersion" />
       </list>
     </recent_temporary>
@@ -181,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714495197632</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new">
+      <option name="closed" value="true" />
+      <created>1714495678352</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714495678352</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -16,8 +16,8 @@ public class AddNewContactTest extends AppiumConfig {
     @Test
     public void addNewContact(){
         new SplashScreen(driver).switchToAuthScreen()
-                .fillEmailField("mymegamail@mail.com")
-                .fillPasswordField("MyPassword123!")
+                .fillEmailField("abcd@mail.ru")
+                .fillPasswordField("Ab01234@")
                 .clickByLoginButton();
         Contact contact = new Contact(NameAndLastNameGenerator.generateName()
                 , NameAndLastNameGenerator.generateLastName(),
