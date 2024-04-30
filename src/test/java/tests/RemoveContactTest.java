@@ -1,0 +1,29 @@
+package tests;
+
+import config.AppiumConfig;
+import helpers.AddressGenerator;
+import helpers.EmailGenerator;
+import helpers.NameAndLastNameGenerator;
+import helpers.PhoneNumberGenerator;
+import models.Contact;
+import org.testng.annotations.Test;
+import screens.ContactListScreen;
+import screens.SplashScreen;
+
+public class RemoveContactTest extends AppiumConfig {
+    @Test
+    public void removeContact(){
+        ContactListScreen contactListScreen = new SplashScreen(driver)
+                .switchToAuthScreen()
+                .fillEmailField("abcd@mail.ru")
+                .fillPasswordField("Ab01234@")
+                .clickByLoginButton();
+        Contact contact = new Contact(NameAndLastNameGenerator.generateName()
+                , NameAndLastNameGenerator.generateLastName(),
+                PhoneNumberGenerator.generatePhoneNumber(),
+                EmailGenerator.generateEmail(3,3,3),
+                AddressGenerator.generateAddress(),"Descr");
+        contactListScreen.openNewContactForm().fillTheForm(contact).createContact();
+
+    }
+}

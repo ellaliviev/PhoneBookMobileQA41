@@ -49,4 +49,6 @@ public class ContactListScreen extends BaseScreen{
         return checkName && checkPhone;
 
     }
+
+    //public ContactListScreen
 }
