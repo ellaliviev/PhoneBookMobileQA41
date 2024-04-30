@@ -9,8 +9,7 @@ public class SplashScreenTest extends AppiumConfig {
 
     @Test
     public void splashScreenCheckVersion(){
-     String resultVersion = new SplashScreen(driver)
-             .getCurrentVersion();
+        String resultVersion = new SplashScreen(driver).getCurrentVersion();
         Assert.assertTrue(resultVersion.contains("Version 1.0.0"));
     }
 }
