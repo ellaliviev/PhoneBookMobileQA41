@@ -19,5 +19,13 @@ public class LoginTest extends AppiumConfig {
         AuthenticationScreen authenticationScreen = contactListScreen.logout();
         Assert.assertTrue(authenticationScreen.isItAuthenticationScreen());
     }
-// loginNegative
+
+    @Test
+    public void loginTestNegative() {
+        AuthenticationScreen authenticationScreen = new SplashScreen(driver).switchToAuthScreen()
+                .fillEmailField("mail")
+                .fillPasswordField("pass")
+                .clickByLoginButton();
+        Assert.assertTrue(authenticationScreen.isItAuthenticationScreen());
+    }
 }

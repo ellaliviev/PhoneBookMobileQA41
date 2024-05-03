@@ -1,5 +1,6 @@
 package config;
 
+import helpers.EmailGenerator;
 import org.testng.annotations.DataProvider;
 
 public class TestData {
@@ -8,8 +9,8 @@ public class TestData {
     public Object[][] loginData(){
 
         return new Object[][]{
-                {"fakeUser01@mail.ru", "fakePassword02"},
-                {"fakeUser02@mail.ru", "fakePassword01"}
+                {EmailGenerator.generateEmail(5,5,3), "fakePassword2"},
+                {"fakeUser2@mail.com", "fakePassword1"}
         };
     }
 

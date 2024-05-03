@@ -25,8 +25,8 @@ public class RemoveContactTest extends AppiumConfig {
     public void removeContact(){
         ContactListScreen contactListScreen = new SplashScreen(driver)
                 .switchToAuthScreen()
-                .fillEmailField("mymegamail@mail.com")
-                .fillPasswordField("MyPassword123!")
+                .fillEmailField("abcd@mail.ru")
+                .fillPasswordField("Ab01234@")
                 .clickByLoginButton();
         Contact contact = new Contact(NameAndLastNameGenerator.generateName()
                 , NameAndLastNameGenerator.generateLastName(),
@@ -41,8 +41,8 @@ public class RemoveContactTest extends AppiumConfig {
     public void removeAllContacts(){
         ContactListScreen contactListScreen = new SplashScreen(driver)
                 .switchToAuthScreen()
-                .fillEmailField("mymegamail@mail.com")
-                .fillPasswordField("MyPassword123!")
+                .fillEmailField("abcd@mail.ru")
+                .fillPasswordField("Ab01234@")
                 .clickByLoginButton();
         Assert.assertTrue(contactListScreen.removeAllContacts().isNoContactsMessage());
     }
